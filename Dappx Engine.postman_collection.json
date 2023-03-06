@@ -1,0 +1,149 @@
+{
+	"id": "546b262f-d34c-2a95-26ec-c7328ce5eb66",
+	"name": "Dappx Engine",
+	"description": "Dappx engine",
+	"order": [
+		"87d16817-d660-8399-6972-2ed16b0fa88c",
+		"064015d9-da58-9648-e1f4-278e329e4164",
+		"0723b820-acf3-b481-a883-21f450db3c6d"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1627390075479,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "064015d9-da58-9648-e1f4-278e329e4164",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:4000/users/createAccount",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "email_id",
+					"value": "nigam.amiddddd12@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "publicAddress",
+					"value": "dfdfdfdfdfdfdfdfdfdfdeyuyyyyyrrrdfdfdwwwdfdfdffdfwwdfdfdff",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "referral_by",
+					"value": "UMBJKKd",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1627473555415,
+			"name": "Create Account",
+			"description": "Get nonce",
+			"collectionId": "546b262f-d34c-2a95-26ec-c7328ce5eb66",
+			"responses": []
+		},
+		{
+			"id": "0723b820-acf3-b481-a883-21f450db3c6d",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:4000/users/authentication",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "publicAddress",
+					"value": "0x61e87e2677d51e502872e482ba4df7710beff1a9",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "signature",
+					"value": "0xc41151f3a8ee6c593ff35af7ac87bd220ed371f2088aa49aa7fdd4b63ed5aef800a7a357e0d480f49864ef889277265d58e879c3a3d5ab63490b31138f5862b81cX",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "referral_by",
+					"value": "UMBJKKd",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1627473553942,
+			"name": "Athenticate and create sessions",
+			"description": "Get nonce",
+			"collectionId": "546b262f-d34c-2a95-26ec-c7328ce5eb66",
+			"responses": []
+		},
+		{
+			"id": "87d16817-d660-8399-6972-2ed16b0fa88c",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:4000/users?publicAddress=dfdfdfdfdfdfdfdfdfdfdeyuyyyyyrrrdfdfdwwwdfdfdffdfwwdfdfdff",
+			"queryParams": [
+				{
+					"key": "publicAddress",
+					"value": "dfdfdfdfdfdfdfdfdfdfdeyuyyyyyrrrdfdfdwwwdfdfdffdfwwdfdfdff",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1627473556681,
+			"name": "Get nonce",
+			"description": "Get nonce",
+			"collectionId": "546b262f-d34c-2a95-26ec-c7328ce5eb66",
+			"responses": []
+		}
+	]
+}
